@@ -1,41 +1,41 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SearchTextField extends StatelessWidget {
-  const SearchTextField();
+  const SearchTextField({super.key});
+
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       cursorColor: Theme.of(context).primaryColor,
       decoration: InputDecoration(
-        contentPadding: EdgeInsets.all(15.h),
+        contentPadding:const EdgeInsets.all(15),
         hintText: 'What do you search for?',
-        hintStyle: TextStyle(
-          fontSize: 14.sp,
+        hintStyle:const TextStyle(
+          fontSize: 14,
           fontWeight: FontWeight.normal,
-          color: const Color.fromRGBO(6, 0, 79, 0.6),
+          color:  Color.fromRGBO(6, 0, 79, 0.6),
         ),
         prefixIcon: IconButton(
           icon: Icon(
             Icons.search,
-            size: 32.sp,
+            size: 32,
             color: Theme.of(context).primaryColor.withOpacity(0.75),
           ),
           onPressed: () {},
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50.r),
+          borderRadius: BorderRadius.circular(50),
           borderSide:
               BorderSide(color: Theme.of(context).primaryColor, width: 1),
         ),
         enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50.r),
+          borderRadius: BorderRadius.circular(50),
           borderSide:
               BorderSide(color: Theme.of(context).primaryColor, width: 1),
         ),
         focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50.r),
+          borderRadius: BorderRadius.circular(50),
           borderSide: BorderSide(
             color: Theme.of(context).primaryColor,
             width: 2,
