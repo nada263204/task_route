@@ -9,8 +9,9 @@ class ProductCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       decoration: BoxDecoration(
-        border: Border.all(color: const Color.fromARGB(139, 18, 81, 133), width: 1.0),
+      decoration: BoxDecoration(
+        border: Border.all(
+            color: const Color.fromARGB(139, 18, 81, 133), width: 1.0),
         borderRadius: BorderRadius.circular(8.0),
       ),
       child: Card(
@@ -98,11 +99,12 @@ class ProductCard extends StatelessWidget {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                           ),
-                          const Icon(Icons.star, color: Colors.yellow, size: 16),
+                          const Icon(Icons.star,
+                              color: Colors.yellow, size: 16),
                           const Spacer(),
                           RawMaterialButton(
                             onPressed: () {},
-                            fillColor:const Color.fromARGB(255, 18, 81, 133),
+                            fillColor: const Color.fromARGB(255, 18, 81, 133),
                             shape: const CircleBorder(),
                             constraints: const BoxConstraints.tightFor(
                               width: 32.0,
